@@ -1,0 +1,18 @@
+env:
+  browser: false
+  commonjs: true
+  es2021: true
+plugins:
+  - regexp
+extends:
+  - eslint:recommended
+  - plugin:regexp/recommended
+parserOptions:
+  ecmaVersion: latest
+rules:
+  semi:
+    - error
+    - always
+  quotes:
+    - error
+    - double
