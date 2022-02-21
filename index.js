@@ -1,6 +1,6 @@
 var iterator = require("deep-for-each");
 var iso6392Codes = require("iso-639-2");
-var regexp = /^x-([a-zA-Z_-]+[a-zA-Z0-9_-]*)-i18n$/;
+var regexp = /^x-([a-zA-Z_-][\w-]*)-i18n$/;
 
 function validateLanguageCode(language) {
     if (typeof(language) === "undefined") {
